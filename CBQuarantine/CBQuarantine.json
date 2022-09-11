@@ -1,0 +1,38 @@
+{
+    "name": "CBQuarantine",
+        "version": "1.0",
+        "author": "Ramesh Vithala @rvithala",
+        "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+        "license": "AGPL-V3",
+        "description": "Quarantine Asset in Carbon Black",
+        "dataTypeList": ["thehive:case_artifact"],
+        "command": "CBQuarantine/CBQuarantine.py",
+        "baseConfig": "CBQuarantine",
+        "configurationItems": [
+            {"name": "cb_uri",
+            "description": "Carbon Black Application URI ",
+            "type": "string",
+            "multi": false,
+            "required": true
+            },
+            {"name": "cb_key",
+            "description": "API key for CB",
+            "type": "string",
+            "multi": false,
+            "required": true
+            },
+            {"name": "org_key",
+            "description": "Organization Key",
+            "type": "string",
+            "multi": false,
+            "required": true
+        },
+           {"name":"api_id",
+           "description" : "API ID",
+           "type": "string",
+           "multi": false,
+           "required": true  
+           }
+        ]
+    }
+    
