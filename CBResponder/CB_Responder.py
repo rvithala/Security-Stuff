@@ -34,6 +34,6 @@ class CBResponder(Responder):
             )
         ]
 if __name__ == "__main__":
-    CBResponderß().run()
+    CBResponder().run()
         
        
